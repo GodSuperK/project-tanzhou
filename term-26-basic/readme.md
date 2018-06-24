@@ -125,13 +125,11 @@
 
 **开课时间**： 2018-07-04 20:00:00
 
-
-
-####  Exercises
+## Exercises
 
 - **src** : include all source code
 - **code-shot** : include all code screen shot
 - **readme**: the content of the task
 
-#### See Also
+## See Also
 
