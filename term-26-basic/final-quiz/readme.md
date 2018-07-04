@@ -9,7 +9,7 @@
 	散列类型: [set, dict]}
 ```
 
-**See Code **:  [使用Python定义学过的数据类型](question_1.py)
+**See Code**:  [使用Python定义学过的数据类型](question_1.py)
 
 2. 如何捕获指定类型的异常  (10分)
 
