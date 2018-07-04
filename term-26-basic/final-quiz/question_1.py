@@ -1,5 +1,6 @@
 """
-question_1.py
+file_name = question_1.py
+author = 孔德成
 """
 
 def main():
