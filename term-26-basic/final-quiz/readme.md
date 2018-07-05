@@ -49,55 +49,79 @@
       - 返回该字符串由哪些符号组成  
       - 例如： "abacad" 这个字符串由 a b c d 组成  
 
-      ```python
-      lue
-      ```
+      **核心代码**:
 
-      **[See Code](question_5.py)**
+      ![core code](code-shot/question_5_core_code.png)
+
+      **主函数代码**:
+
+      ![main code](code-shot/question_5_main_code.png)
+
+      
+
+      **测试结果:**
+
+      ![test result](code-shot/question_5_test_code.png)
+
+      **[See Full Code](question_5.py)**
 
 6. 定义一个Person类，这个类创建的实例需要有名字，年纪，职业三个属性， 这个类的实例之间可以像函数一样直接被调用，调用的时候打印出实例的姓名  年纪  和属性，实例被销毁的时候打印 名字和年纪 (15分)
 
-7. 输入一个序列，判断这个序列是升序，降序还是无序。 说明：排序规则，是Python默认的排序规则. 要求：
+      **核心代码**: ![核心代码](code-shot/question_6_core_code.png)
 
-      1. 如果是升序，输出'UP' 
+      **主函数代码**:
 
-      2. 如果是降序，输出'DOWN' 
+      ![main code](code-shot/question_6_main_code.png)
 
-      3. 如果无序，输出None 
+      **测试结果**:
 
-    建议：整数序列或字符序列 
+      ![test result](code-shot/question_6_test_code.png)
+
+      **[See Full code](question_6.py)**
+
+      
+
+7. 输入一个序列，判断这个序列是升序，降序还是无序。 说明：排序规则，是Python默认的排序规则. （10分）要求：
+
+      - 如果是升序，输出'UP' 
+
+      - 如果是降序，输出'DOWN' 
+
+      - 如果无序，输出None 
+
+        ```jade
+        # 程序输出应该如下所示
+        >>> which_order('abc') 
+        UP 
+        >>> which_order([3,2,1]) 
+        DOWN 
+        >>> which_order('132')
+        >>>
+        ```
+
+   **核心代码:**
+
+![core code](code-shot/question_7_main_code.png)
+
+**程序测试结果:**
+
+![test result](code-shot/question_7_test_code.png)
+
+8. 定义一个函数（20分）
+
+    - 要求可以传入一个字典和列表
+    - 要求字典和列表的长度不相等
+    - 字典和列表长度变为一样的长度
+    - 字典的value值和列表的元素互换
+    - 返回一个字典和元祖
+
+    ```jade
+    # 程序输出应该如下所示
+    >>> exchange_body({"k1":"v1", "k2":"v2"},  ["l1", "l2", "l3"])
+    {"k1":"l1", "k2":"l2"}         ["v1", "v2"]
+    ```
+
     
-     例如： 
-    
-     which_order('abc') 
-    
-     UP 
-    
-     >>> which_order([3,2,1]) 
-    
-     DOWN 
-    
-     >>> which_order('132')
-    
-     >>>
 
-   （10分）
-
-8. 定义一个函数
-
-    1：要求可以传入一个字典和列表
-
-    2：要求字典和列表的长度不相等
-
-    3：字典和列表长度变为一样的长度
-
-    4：字典的value值和列表的元素互换
-
-    5：返回一个字典和元祖
-
-   \>> 例如： 传入 {"k1":"v1", "k2":"v2"}       ["l1", "l2", "l3"]
-
-   ​                 返回 {"k1":"l1", "k2":"l2"}         ["v1", "v2"]
-
-   （20分）
+   只能传入一个字典, 然后另一个参数只要是str或set或tuple或list就可以
 
