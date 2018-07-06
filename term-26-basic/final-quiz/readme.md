@@ -109,6 +109,8 @@
         **程序测试结果:**
 
         ![test result](code-shot/question_7_test_code.png)
+        **[See Full Code](question_7.py)**
+
 
 8. 定义一个函数（20分）
 
