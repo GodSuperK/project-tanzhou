@@ -102,14 +102,13 @@
         >>> which_order('132')
         >>>
         ```
+        **核心代码:**
 
-   **核心代码:**
+        ![core code](code-shot/question_7_main_code.png)
 
-![core code](code-shot/question_7_main_code.png)
+        **程序测试结果:**
 
-**程序测试结果:**
-
-![test result](code-shot/question_7_test_code.png)
+        ![test result](code-shot/question_7_test_code.png)
 
 8. 定义一个函数（20分）
 
