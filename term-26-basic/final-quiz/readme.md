@@ -2,14 +2,14 @@
 
 1. **列出所学过的数值类型，序列类型，散列类型**  (10分)
 
-```python
-答案 = {
-	数值类型: [int, float, decimal.Decimal, bool, complex], 
-	序列类型: [str, bytes, list, tuple],
-	散列类型: [set, dict]}
-```
+   ```python
+   答案 = {
+   	数值类型: [int, float, decimal.Decimal, bool, complex], 
+   	序列类型: [str, bytes, list, tuple],
+   	散列类型: [set, dict]}
+   ```
 
-**[See Code](question_1.py)**
+   **[See Code](question_1.py)**
 
 
 
@@ -118,10 +118,20 @@
     ```jade
     # 程序输出应该如下所示
     >>> exchange_body({"k1":"v1", "k2":"v2"},  ["l1", "l2", "l3"])
-    {"k1":"l1", "k2":"l2"}         ["v1", "v2"]
+    {"k1":"l1", "k2":"l2"} ["v1", "v2"]
     ```
 
-    
+    **核心代码:**
 
-   只能传入一个字典, 然后另一个参数只要是str或set或tuple或list就可以
+    ![core code](code-shot/question_8_core_code.png)
+
+    **主函数代码:**
+
+    ![main code](code-shot/question_8_main_code.png)
+
+    **测试结果:**
+
+    ![test code](code-shot/question_8_test_code.png)
+
+    **[See Full Code](question_8.py)**
 
