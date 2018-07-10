@@ -1,7 +1,7 @@
 # Python Basic Class Term 26
 **开课时间**：2018/06/06至2018/07/04 
 
-**主讲老师**：炎志
+**主讲老师**：炎志, 聆听
 
 ## [Table of Contents](contents.md)
 
