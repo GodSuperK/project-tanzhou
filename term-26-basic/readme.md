@@ -5,7 +5,7 @@
 
 ## [Table of Contents](contents.md)
 
-## [Quiz](quiz/quiz.md)
+## [Quiz](quiz/readme.md)
 
 - **src** : include all source code
 - **code-shot** : include all code screen shot
