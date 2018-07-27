@@ -2,7 +2,7 @@ import socket
 
 client = socket.socket()
 
-client.connect(('127.0.0.1', 8877))
+client.connect(('39.105.73.108', 8877))
 info = client.recv(1024)
 print(info.decode())
 
