@@ -24,6 +24,6 @@ class MyHandler(BaseRequestHandler):
 
 
 if __name__ == '__main__':
-    server = ThreadingTCPServer(('127.0.0.1', 8877), MyHandler)
+    server = ThreadingTCPServer(('0.0.0.0', 8877), MyHandler)
     server.serve_forever()
     print("Vian 聊天室已经成功启动")
