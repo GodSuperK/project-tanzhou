@@ -1,14 +1,6 @@
 import socket
 
 # 非阻塞套接字实现并发服务器
-"""
-测试结果
-1. 多客户端连接, 不排队 (done)
-2. 多客户端消息处理, 不排队伍 (done)
-3. 断开连接, 没有问题
-4. 
-"""
-
 
 class MyTCPServer(object):
 
