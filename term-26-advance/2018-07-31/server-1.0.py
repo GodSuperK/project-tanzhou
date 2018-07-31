@@ -1,6 +1,9 @@
 import socket
 
-# 非阻塞套接字实现并发服务器
+"""
+非阻塞套接字实现并发服务器
+"""
+
 
 class MyTCPServer(object):
 

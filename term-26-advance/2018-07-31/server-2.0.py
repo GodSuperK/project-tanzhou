@@ -1,6 +1,10 @@
 import selectors
 import socket
 
+"""
+IO多路复用(Epoll)服务器
+"""
+
 
 def read(connection):
     recv_data = connection.recv(1024)
