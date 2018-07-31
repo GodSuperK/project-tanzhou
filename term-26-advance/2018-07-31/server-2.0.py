@@ -30,7 +30,6 @@ def main():
     admin.register(server, selectors.EVENT_READ, accept)
     while True:
         events = admin.select()
-        print(events)
         for key, mask in events:
             callback = key.data
             sock = key.fileobj
