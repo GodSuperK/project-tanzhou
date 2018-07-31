@@ -1,14 +1,13 @@
 import selectors
 import socket
 
-admin = selectors.EpollSelector()
-
 
 def read(connection):
     recv_data = connection.recv(1024)
     if not recv_data:
         admin.unregister(connection)
         connection.close()
+        print()
     else:
         print(recv_data.decode('utf8'))
         connection.send(recv_data)
@@ -16,11 +15,14 @@ def read(connection):
 
 def accept(server):
     conn, address = server.accept()
-
+    print("{}客户端已连接".format(address[0]))
     admin.register(conn, selectors.EVENT_READ, read)
 
 
 def main():
+    global admin
+    admin = selectors.EpollSelector()
+
     server = socket.socket()
     server.bind(('127.0.0.1', 9999))
     server.listen(5)
@@ -30,9 +32,10 @@ def main():
         events = admin.select()
         print(events)
         for key, mask in events:
-            callback = key[0][0].data
-            sock = key[0][0].fileobj
+            callback = key.data
+            sock = key.fileobj
             callback(sock)
+
 
 if __name__ == "__main__":
     main()
