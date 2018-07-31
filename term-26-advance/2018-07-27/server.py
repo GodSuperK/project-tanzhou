@@ -1,6 +1,5 @@
 from socketserver import ThreadingTCPServer, BaseRequestHandler
 
-
 class MyHandler(BaseRequestHandler):
 
     def handle(self):
@@ -24,6 +23,6 @@ class MyHandler(BaseRequestHandler):
 
 
 if __name__ == '__main__':
-    server = ThreadingTCPServer(('127.0.0.1', 8877), MyHandler)
-    server.serve_forever()
+    server = ThreadingTCPServer(('0.0.0.0', 8877), MyHandler)
     print("Vian 聊天室已经成功启动")
+    server.serve_forever()
