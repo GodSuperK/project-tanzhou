@@ -15,7 +15,6 @@ def read(connection):
 
 def accept(server):
     conn, address = server.accept()
-    print("{}客户端已连接".format(address[0]))
     admin.register(conn, selectors.EVENT_READ, read)
 
 
