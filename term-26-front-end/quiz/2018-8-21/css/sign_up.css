@@ -1,0 +1,119 @@
+/*表单样式*/
+input[type="text"], input[type="password"], input[type="number"], input[type='submit'] {
+  width: 400px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input[type='submit'] {
+  background-color: green;
+}
+button {
+  width: 150px;
+  height: 40px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 20px;
+  color: yellow;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+}
+
+/*top start*/
+.top {
+  width: 100%;
+  height: 74px;
+  background: black;
+}
+
+.top div {
+  float: left;
+}
+
+.top .user {
+  float: right;
+}
+.top .nav li {
+  list-style: none;
+  display: inline-block;
+}
+/*top end*/
+
+/*content start*/
+.content {
+  width: 100%;
+  height: 450px;
+  background-color: pink;
+}
+
+.content .sign_up_form{
+  width: 430px;
+  margin: 0 auto;
+  background-color: white;
+}
+.content .sign_up_form p {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.content .sign_up_form .form_title {
+  width: 400px;
+  height: 40px;
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+}
+.content .sign_up_form .form_title .prompt1 {
+  float: left;
+}
+.content .sign_up_form .form_title .prompt2 {
+  float: right;
+}
+
+.content .sign_up_form a:link{
+  text-decoration: none;
+  color: #42f1f4;
+}
+.content .sign_up_form input[name="verify_code"] {
+  width: 250px;
+}
+
+.content .sign_up_form input[name="verify_img"] {
+  width: 250px;
+}
+
+/*content end*/
+
+/*bottom start*/
+.bottom {
+  width: 100%;
+  height: 150px;
+}
+
+.bottom .box1 {
+  width: 100%;
+  height: 100px;
+  background: purple;
+}
+.bottom .box1 .logo {
+  width:30%;
+  float: left;
+}
+.bottom .box1 .reference {
+  width: 70%;
+  padding-top: 20px;
+  float: left;
+}
+
+.bottom .box2 {
+  width: 100%;
+  height: 50px;
+  background: orange;
+  text-align: center;
+  line-height: 50px;
+}
+/*bottom end*/

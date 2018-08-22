@@ -1,0 +1,55 @@
+input[type="text"], input[type="password"], input[type="number"], input[type='submit'] {
+  width: 440px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 25px;
+}
+input[type='submit'] {
+  background-color: skyblue;
+}
+
+.sign_in_form{
+  width: 460px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.sign_in_form p {
+  margin-left: 10px;
+}
+.sign_in_form .form_title {
+  width: 440px;
+  height: 50px;
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.sign_in_form .form_title span {
+  display: block;
+}
+
+.sign_in_form .form_title .prompt1 {
+  float: left;
+}
+.sign_in_form .form_title .prompt2 {
+  float: right;
+}
+
+.sign_in_form .form_title .prompt2 a:link{
+  text-decoration: none;
+  color: red;
+}
+.sign_in_form .prompt3 {
+  float: left;
+}
+.sign_in_form .prompt4 {
+  float: right;
+
+
+}
+
+.sign_in_form .prompt4 a:link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
