@@ -29,6 +29,7 @@ input[type='submit'] {
 }
 
 .sign_in_form .form_title .prompt1 {
+  border-bottom: 4px solid purple;
   float: left;
 }
 .sign_in_form .form_title .prompt2 {

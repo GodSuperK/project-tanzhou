@@ -29,18 +29,40 @@ button {
   width: 100%;
   height: 74px;
   background: black;
+  color: white;
+  font-size: 25px;
 }
 
 .top div {
   float: left;
 }
-
 .top .user {
   float: right;
+  margin-right: 200px;
+}
+
+.top .user a:link {
+  text-decoration: none;
+  line-height: 74px;
+  color: white;
+}
+.top .user img {
+  width: 25px;
 }
 .top .nav li {
+  line-height: 69px;
   list-style: none;
+  margin-right: 30px;
   display: inline-block;
+}
+
+.top .nav .selected{
+  border-bottom: 5px solid red;
+}
+
+.top .nav a:link {
+  color: white;
+  text-decoration: none;
 }
 /*top end*/
 
@@ -68,6 +90,7 @@ button {
   border-bottom: 1px solid gray;
 }
 .content .sign_up_form .form_title .prompt1 {
+  border-bottom: 4px solid purple;
   float: left;
 }
 .content .sign_up_form .form_title .prompt2 {
