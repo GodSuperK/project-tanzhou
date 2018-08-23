@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <style media="screen">
+     * {
+       margin: 0;
+       padding: 0;
+     }
+      img {
+        width: 800px;
+        height: 300px;
+      }
+
+      .carousel {
+        margin: 0 auto;
+        width: 800px;
+        height: 300px;
+        border: 1px solid black;
+        position: relative;
+        font-size: 70px;
+        /*设置字体的颜色为透明*/
+        color: rgb(255,255,255,0);
+        font-weight: bolder;
+      }
+
+      .carousel .go_left {
+        width: 40px;
+        height: 50px;
+        text-align: left;
+        position: absolute;
+        top: 112px;
+        left: 20px;
+        /*将元素放在最高层（即可被看见）*/
+        z-index: 100;
+      }
+
+      .carousel .go_right {
+        width: 40px;
+        height: 50px;
+        text-align: right;
+        position: absolute;
+        top: 112px;
+        right: 20px;
+        /*将元素放在最高层（即可被看见）*/
+        z-index: 100;
+      }
+
+      .carousel:hover {
+        color: white;
+      }
+
+      .carousel ul {
+        list-style: none;
+        font-size: 30px;
+      }
+      .carousel .list {
+        list-style: none;
+        position: absolute;
+        bottom: 10px;
+        left: 332px;
+        /*将元素放在最高层（即可被看见）*/
+        z-index: 100;
+      }
+      .carousel .list li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        /*设置圆角边框，无背景颜色*/
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .carousel .list li:hover {
+        background: white;
+      }
+      /*堆叠图片，根据z-index的大小来决定显示哪张图片*/
+      .carousel .img1 {
+        position: absolute;
+        z-index: 10;
+      }
+      .carousel .img2 {
+        position: absolute;
+        z-index: 9;
+      }
+      .carousel .img3 {
+        position: absolute;
+        z-index: 8;
+      }
+      .carousel .img4 {
+        position: absolute;
+        z-index: 7;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      原理：
+      页面布局使用父相子绝，内部元素就可以实现任意摆放，只需要控制元素的层级即可（z-index）
+      动态效果用伪类即可实现（修改悬浮在元素上时的字体颜色或元素的背景颜色）
+    -->
+    <div class="carousel">
+      <div class="go_left">&lt;</div>
+      <div class="go_right">&gt;</div>
+      <ul class="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <img  class="img1" src="https://res.shiguangkey.com//file/201808/21/20180821181706564761258.jpg" alt="">
+      <img  class="img2" src="https://res.shiguangkey.com//file/201807/05/20180705170530788078021.png" alt="">
+      <img class="img3" src="https://res.shiguangkey.com//file/201807/05/20180705170530788078021.png" alt="">
+      <img class="img4" src="https://res.shiguangkey.com//file/201807/21/20180721093655884056155.jpg" alt="">
+    </div>
+  </body>
+</html>
